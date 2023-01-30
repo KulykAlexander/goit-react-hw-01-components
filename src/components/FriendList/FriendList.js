@@ -18,6 +18,6 @@ export const FriendList = ({ friends }) => {
   );
 };
 
-FriendList.prototype = {
+FriendList.propTypes = {
   freinds: PropTypes.arrayOf.isRequired,
 };

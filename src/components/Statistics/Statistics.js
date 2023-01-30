@@ -19,7 +19,7 @@ export const Statistics = ({ title, stats }) => {
   );
 };
 
-Statistics.protoType = {
+Statistics.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.exact({
