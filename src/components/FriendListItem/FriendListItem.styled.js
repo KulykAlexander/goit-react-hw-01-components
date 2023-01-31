@@ -9,19 +9,13 @@ export const FriendItem = styled.li`
   padding: 10px 10px;
   border: 1px solid yellowgreen;
 `;
-export const StatusOnLine = styled.span`
+export const StatusLine = styled.span`
   display: block;
   width: 20px;
   height: 20px;
   border-radius: 50%;
   background-color: green;
-`;
-export const StatusOffLine = styled.span`
-  display: block;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: red;
+  background-color: ${props => (props.isOnline ? 'green' : 'red')}; ;
 `;
 
 export const FriendName = styled.p`
